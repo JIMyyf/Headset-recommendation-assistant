@@ -1,4 +1,4 @@
-# **Web 聊天助手（基于 Flask + corpus JavaScript）**
+# **Web 聊天助手（基于 Flask 框架）**
 
 ## **📌 项目简介**
 
