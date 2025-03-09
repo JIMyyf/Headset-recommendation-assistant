@@ -1,0 +1,290 @@
+{
+  "headphones": [
+    {
+      "name": "AirPods 2",
+      "brand": "Apple",
+      "price": 899,
+      "type": "入耳式",
+      "features": ["长续航", "低延迟"],
+      "battery_life": "5小时（单次）/ 24小时（充电盒）",
+      "noise_cancelling": "无",
+      "waterproof": "无",
+      "best_for": ["通勤", "远程办公"]
+    },
+    {
+      "name": "AirPods 3",
+      "brand": "Apple",
+      "price": 1399,
+      "type": "入耳式",
+      "features": ["空间音频", "低延迟", "长续航"],
+      "battery_life": "6小时（单次）/ 30小时（充电盒）",
+      "noise_cancelling": "无",
+      "waterproof": "IPX4",
+      "best_for": ["音乐欣赏", "通勤"]
+    },
+    {
+      "name": "AirPods Pro",
+      "brand": "Apple",
+      "price": 1599,
+      "type": "入耳式",
+      "features": ["主动降噪", "空间音频", "防水", "低延迟"],
+      "battery_life": "4.5小时（单次）/ 24小时（充电盒）",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "IPX4",
+      "best_for": ["通勤", "远程办公", "音乐欣赏"]
+    },
+    {
+      "name": "AirPods Pro 2",
+      "brand": "Apple",
+      "price": 1899,
+      "type": "入耳式",
+      "features": ["自适应主动降噪", "空间音频", "防水"],
+      "battery_life": "6小时（单次）/ 30小时（充电盒）",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "IPX4",
+      "best_for": ["通勤", "远程办公", "地铁"]
+    },
+    {
+      "name": "AirPods Max",
+      "brand": "Apple",
+      "price": 4399,
+      "type": "头戴式",
+      "features": ["主动降噪", "高解析音质", "长续航"],
+      "battery_life": "20小时",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "无",
+      "best_for": ["音乐欣赏", "办公室", "旅行"]
+    },
+    {
+      "name": "Sony WH-1000XM4",
+      "brand": "Sony",
+      "price": 1999,
+      "type": "头戴式",
+      "features": ["主动降噪", "长续航", "高解析音质"],
+      "battery_life": "30小时",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "无",
+      "best_for": ["办公室", "音乐欣赏", "旅行"]
+    },
+    {
+      "name": "Sony WH-1000XM5",
+      "brand": "Sony",
+      "price": 2499,
+      "type": "头戴式",
+      "features": ["主动降噪", "长续航", "高解析音质"],
+      "battery_life": "30小时",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "无",
+      "best_for": ["办公室", "音乐欣赏", "旅行"]
+    },
+    {
+      "name": "Sony WF-1000XM4",
+      "brand": "Sony",
+      "price": 1699,
+      "type": "入耳式",
+      "features": ["主动降噪", "高解析音质", "防水"],
+      "battery_life": "8小时（单次）/ 24小时（充电盒）",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "IPX4",
+      "best_for": ["通勤", "音乐欣赏"]
+    },
+    {
+      "name": "Sony WF-1000XM5",
+      "brand": "Sony",
+      "price": 1899,
+      "type": "入耳式",
+      "features": ["主动降噪", "高解析音质", "防水"],
+      "battery_life": "8小时（单次）/ 24小时（充电盒）",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "IPX4",
+      "best_for": ["通勤", "远程办公", "音乐欣赏"]
+    },
+    {
+      "name": "Sony LinkBuds S",
+      "brand": "Sony",
+      "price": 1099,
+      "type": "入耳式",
+      "features": ["主动降噪", "超轻", "环境音模式"],
+      "battery_life": "6小时（单次）/ 20小时（充电盒）",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "IPX4",
+      "best_for": ["通勤", "远程办公"]
+    },
+    {
+      "name": "AirPods 2 有线版",
+      "brand": "Apple",
+      "price": 899,
+      "type": "入耳式",
+      "features": ["低延迟", "苹果生态优化"],
+      "battery_life": "5小时（单次）/ 24小时（充电盒）",
+      "noise_cancelling": "无",
+      "waterproof": "无",
+      "best_for": ["通勤", "远程办公"]
+    },
+    {
+      "name": "AirPods 2 无线充电版",
+      "brand": "Apple",
+      "price": 1199,
+      "type": "入耳式",
+      "features": ["无线充电", "低延迟"],
+      "battery_life": "5小时（单次）/ 24小时（充电盒）",
+      "noise_cancelling": "无",
+      "waterproof": "无",
+      "best_for": ["通勤", "远程办公"]
+    },
+    {
+      "name": "AirPods Pro 2 USB-C",
+      "brand": "Apple",
+      "price": 1899,
+      "type": "入耳式",
+      "features": ["自适应主动降噪", "空间音频", "低延迟"],
+      "battery_life": "6小时（单次）/ 30小时（充电盒）",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "IPX4",
+      "best_for": ["地铁", "远程办公"]
+    },
+    {
+      "name": "Sony WH-CH720N",
+      "brand": "Sony",
+      "price": 899,
+      "type": "头戴式",
+      "features": ["主动降噪", "轻量化"],
+      "battery_life": "35小时",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "无",
+      "best_for": ["通勤", "远程办公"]
+    },
+    {
+      "name": "Sony WH-XB910N",
+      "brand": "Sony",
+      "price": 1299,
+      "type": "头戴式",
+      "features": ["重低音", "主动降噪"],
+      "battery_life": "30小时",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "无",
+      "best_for": ["音乐欣赏"]
+    },
+    {
+      "name": "Sony WH-H910N",
+      "brand": "Sony",
+      "price": 1199,
+      "type": "头戴式",
+      "features": ["长续航", "主动降噪"],
+      "battery_life": "35小时",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "无",
+      "best_for": ["通勤", "旅行"]
+    },
+    {
+      "name": "Sony WF-C500",
+      "brand": "Sony",
+      "price": 699,
+      "type": "入耳式",
+      "features": ["防水", "长续航"],
+      "battery_life": "10小时（单次）/ 20小时（充电盒）",
+      "noise_cancelling": "无",
+      "waterproof": "IPX4",
+      "best_for": ["运动"]
+    },
+    {
+      "name": "Sony WF-SP800N",
+      "brand": "Sony",
+      "price": 999,
+      "type": "入耳式",
+      "features": ["防水", "主动降噪", "运动稳定性"],
+      "battery_life": "9小时（单次）/ 26小时（充电盒）",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "IPX5",
+      "best_for": ["运动"]
+    },
+    {
+      "name": "Sony WF-SP900",
+      "brand": "Sony",
+      "price": 1499,
+      "type": "入耳式",
+      "features": ["游泳专用", "IPX7防水"],
+      "battery_life": "3小时（单次）/ 12小时（充电盒）",
+      "noise_cancelling": "无",
+      "waterproof": "IPX7",
+      "best_for": ["游泳"]
+    },
+    {
+      "name": "Sony LinkBuds",
+      "brand": "Sony",
+      "price": 999,
+      "type": "入耳式",
+      "features": ["环境音模式", "超轻"],
+      "battery_life": "5.5小时（单次）/ 17.5小时（充电盒）",
+      "noise_cancelling": "无",
+      "waterproof": "IPX4",
+      "best_for": ["远程办公"]
+    },
+    {
+      "name": "Sony LinkBuds S 高解析版",
+      "brand": "Sony",
+      "price": 1299,
+      "type": "入耳式",
+      "features": ["主动降噪", "高解析音质"],
+      "battery_life": "6小时（单次）/ 20小时（充电盒）",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "IPX4",
+      "best_for": ["通勤"]
+    },
+    {
+      "name": "Sony MDR-7506",
+      "brand": "Sony",
+      "price": 899,
+      "type": "头戴式",
+      "features": ["专业监听", "高解析音质"],
+      "battery_life": "有线连接",
+      "noise_cancelling": "无",
+      "waterproof": "无",
+      "best_for": ["录音室", "音乐制作"]
+    },
+    {
+      "name": "Sony MDR-1AM2",
+      "brand": "Sony",
+      "price": 1499,
+      "type": "头戴式",
+      "features": ["高解析音质", "舒适佩戴"],
+      "battery_life": "有线连接",
+      "noise_cancelling": "无",
+      "waterproof": "无",
+      "best_for": ["音乐欣赏"]
+    },
+    {
+      "name": "Sony INZONE H3",
+      "brand": "Sony",
+      "price": 999,
+      "type": "头戴式",
+      "features": ["游戏模式", "环绕音效"],
+      "battery_life": "有线连接",
+      "noise_cancelling": "无",
+      "waterproof": "无",
+      "best_for": ["游戏"]
+    },
+    {
+      "name": "Sony INZONE H7",
+      "brand": "Sony",
+      "price": 1599,
+      "type": "头戴式",
+      "features": ["无线低延迟", "环绕音效"],
+      "battery_life": "40小时",
+      "noise_cancelling": "无",
+      "waterproof": "无",
+      "best_for": ["游戏"]
+    },
+    {
+      "name": "Sony INZONE H9",
+      "brand": "Sony",
+      "price": 2199,
+      "type": "头戴式",
+      "features": ["无线低延迟", "主动降噪", "环绕音效"],
+      "battery_life": "32小时",
+      "noise_cancelling": "主动降噪",
+      "waterproof": "无",
+      "best_for": ["游戏"]
+    }
+  ]
+}
