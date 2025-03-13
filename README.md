@@ -11,19 +11,17 @@
 ## **📁 项目结构**
 
 📂 项目目录
-├─corpus.json
-├─headphones.json
-├─Headset assistant.html
-├─LICENSE
-├─README.md
-├─response.py
-├─server.py
-│
-├─static
-│   ├─script.js
-│   ├─style.css
-
----
+.
+├── corpus.json
+├── headphones.json
+├── Headset assistant.html
+├── LICENSE
+├── README.md
+├── response.py
+├── server.py
+└── static
+    ├── script.js
+    └── style.css
 
 ## **🌍 功能介绍**
 
