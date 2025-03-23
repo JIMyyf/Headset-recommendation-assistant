@@ -5,6 +5,18 @@ document.querySelector(".ipt").addEventListener("keydown", function (e) {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    let chatDisplay = document.getElementById("chatDisplay");
+
+    // 创建系统消息
+    let welcomeMessage = document.createElement("div");
+    welcomeMessage.classList.add("chat-message", "system");
+    welcomeMessage.textContent = "🎧 欢迎使用智能耳机助手！";
+
+    // 添加到聊天窗口
+    chatDisplay.appendChild(welcomeMessage);
+});
+
 function sendMessage() {
     const inputField = document.querySelector(".ipt");
     const message = inputField.value.trim();

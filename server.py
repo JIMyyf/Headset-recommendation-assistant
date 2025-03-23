@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, send_from_directory
-from response import process_message  # 从 response.py 中导入处理函数
+from response import process_message
 
 app = Flask(__name__)
 
@@ -7,7 +7,6 @@ app = Flask(__name__)
 # 根路由，返回前端 HTML 文件
 @app.route('/')
 def index():
-    # 假设 Headset assistant.html 与 server.py 在同一目录下
     return send_from_directory('.', 'Headset assistant.html')
 
 
