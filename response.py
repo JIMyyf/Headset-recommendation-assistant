@@ -1,5 +1,6 @@
 import json
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.decomposition import TruncatedSVD
 from sklearn.metrics.pairwise import cosine_similarity
 
 # 加载语料库和耳机数据
@@ -23,11 +24,16 @@ for intent in intents_data['intents']:
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(intent_examples)
 
+# 应用 LSA 进行降维
+lsa = TruncatedSVD(n_components=50)  # 选择合适的组件数量
+X_lsa = lsa.fit_transform(X)
+
 
 def recognize_intent(user_input):
-    """基于 TF-IDF 的意图识别函数"""
+    """基于 LSA 的意图识别函数"""
     # 如果用户输入包含“预算”关键词，直接返回 recommend_by_price 意图
-    if "预算" in user_input or "价格" in user_input or "元" in user_input:
+    if "预算" in user_input or "价格" in user_input or "元" in user_input or any(
+            keyword in user_input for keyword in ["以内", "以下", '左右']):
         return "recommend_by_price"
 
     # 如果用户输入包含“比较”关键词，直接返回 compare_headphones 意图
@@ -37,12 +43,12 @@ def recognize_intent(user_input):
     # 如果用户输入包含“信息”关键词，直接返回 ask_headphone_info 意图
     if "详细" in user_input or "信息" in user_input or "参数" in user_input or "介绍" in user_input:
         return "ask_headphone_info"
-
-    # 将用户输入转换为 TF-IDF 向量
+    # 将用户输入转换为 TF-IDF 向量并应用 LSA
     user_input_vec = vectorizer.transform([user_input])
+    user_input_vec_lsa = lsa.transform(user_input_vec)
 
     # 计算与所有示例的余弦相似度
-    similarities = cosine_similarity(user_input_vec, X)
+    similarities = cosine_similarity(user_input_vec_lsa, X_lsa)
 
     # 找到最相似的示例
     most_similar_index = similarities.argmax()
@@ -141,19 +147,18 @@ def generate_headphone_info_response(headphone_names):
         return f"找不到关于 {headphone_names[0]} 的详细信息，请确认名称是否正确"
 
     # 带换行符的响应模板
-    template = """
-    🎧 {headphone} 详细信息：
+    template = """\
+🎧 {headphone} 详细信息：
 
-    品牌：{brand}
-    类型：{type}
-    价格：{price}元
-    续航时间：{battery_life}
-    降噪功能：{noise_cancelling}
-    防水等级：{waterproof}
-    主要特点：
-    {features}
-    适用场景：{best_for}
-    """
+品牌：{brand}
+类型：{type}
+价格：{price}元
+续航时间：{battery_life}
+降噪功能：{noise_cancelling}
+防水等级：{waterproof}
+主要特点：
+{features}
+适用场景：{best_for}"""
 
     return template.format(
         headphone=headphone['name'],
@@ -200,9 +205,6 @@ def process_message(user_input):
 
 # 主聊天函数
 def chat():
-    '''
-    仅用作后端测试调用，前端不使用该函数
-    '''
     print("🎧 欢迎使用智能耳机助手！")
     while True:
         user_input = input("\n请输入问题（输入 退出 结束）：").strip()
